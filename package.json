@@ -1,0 +1,32 @@
+{
+  "name": "pm2-cloudwatch",
+  "version": "1.0.0",
+  "description": "PM2 Module that sends logs up to a cloudwatch instance",
+  "main": "app.js",
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
+  "apps": [
+    {
+      "merge_logs": true,
+      "max_memory_restart": "200M",
+      "script": "app.js"
+    }
+  ],
+  "config": {
+    "logGroupName": "/pm2/",
+    "logStreamName": "debug",
+    "awsRegion": "eu-west-1",
+    "awsAccessKeyId": "",
+    "awsSecretKey": ""
+  },
+  "keywords": [],
+  "author": "Apriady",
+  "license": "MIT",
+  "dependencies": {
+    "pm2": "^5.1.0",
+    "pmx": "beta",
+    "winston": "^3.3.3",
+    "winston-cloudwatch": "^2.5.2"
+  }
+}
