@@ -8,7 +8,7 @@ PM2 module to forwards pm2 logs to [AWS Cloudwatch](https://aws.amazon.com/). Yo
 
 ## Install
 
-- `pm2 install apriady/pm2-cloudwatch`
+- `pm2 install pm2-cloudwatch`
 
 ## Configure
 
@@ -21,14 +21,14 @@ PM2 module to forwards pm2 logs to [AWS Cloudwatch](https://aws.amazon.com/). Yo
 #### How to set this value ?
 
  After having installed the module you have to type :
-- `pm2 set @blacksquareca/pm2-cloudwatch:logGroupName [logname]`
-- `pm2 set @blacksquareca/pm2-cloudwatch:logStreamName [streamname]`
-- `pm2 set @blacksquareca/pm2-cloudwatch:awsRegion [aws region]`
-- `pm2 set @blacksquareca/pm2-cloudwatch:awsAccessKeyId [aws key]`
-- `pm2 set @blacksquareca/pm2-cloudwatch:awsSecretKey [aws secret]`
+- `pm2 set pm2-cloudwatch:logGroupName [logname]`
+- `pm2 set pm2-cloudwatch:logStreamName [streamname]`
+- `pm2 set pm2-cloudwatch:awsRegion [aws region]`
+- `pm2 set pm2-cloudwatch:awsAccessKeyId [aws key]`
+- `pm2 set pm2-cloudwatch:awsSecretKey [aws secret]`
 
 
 
 ## Uninstall
 
-- `pm2 uninstall apriady/pm2-cloudwatch`
+- `pm2 uninstall pm2-cloudwatch`

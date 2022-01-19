@@ -1,6 +1,6 @@
 {
   "name": "pm2-cloudwatch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PM2 Module that sends logs up to a cloudwatch instance",
   "main": "app.js",
   "scripts": {
